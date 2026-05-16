@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>交通違規(含強制險)查詢及繳納 - 監理服務網</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- BEGIN: MainHeader -->
+  <header>
+    <div class="container header-container">
+      <div class="header-logo-area">
+        <!-- Using the provided image as it contains the logo -->
+        <img alt="監理服務網 Motor Vehicle Driver Information Service" src="/image/m3_logo.jpg" />
+      </div>
+      <div class="top-bar">
+        <div class="top-links">
+          <span>:::</span>
+          <a href="#">English</a> | <a href="#">網站地圖</a> |
+          <a href="#">兒童版</a> | <a href="#">行動版</a> |
+          <a href="#">監理服務 APP</a>
+          <a class="login-btn" href="#">會員登入 / 加入會員</a>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="#">:::</a></li>
+          <li><a href="#">駕駛人</a></li>
+          <li><a href="#">汽機車</a></li>
+          <li><a href="#">交通違規</a></li>
+          <li><a href="#">考試報名</a></li>
+          <li><a href="#">選號標牌</a></li>
+          <li><a href="#">業者資訊</a></li>
+          <li><a href="#">認識監理</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- END: MainHeader -->
+  <main class="container">
+    <div class="main-wrapper">
+      <!-- BEGIN: ContentArea -->
+      <section class="content-area">
+        <div class="page-header">
+          <h1 class="page-title">交通違規(含強制險)查詢及繳納</h1>
+          <button class="print-btn">友善列印</button>
+        </div>
+        <div class="warning-box">
+          <div class="warning-icon">!</div>
+          <div class="warning-text">
+            一、交通違規紀錄不會即時更新，需待舉發機關入案後，才可於線上查詢到。<br />
+            二、請注意，若使用本功能繳費完成，每筆違規皆會收取一筆手續費！<br />
+            三、交通違規不會以電子郵件通知未繳，收到皆為詐騙，請提高警覺。
+          </div>
+        </div>
+        <div class="user-info">
+          L12534**** / 生日：
+          <span class="red">087年04月12日</span> ，違規紀錄如下：
+        </div>
+        <div class="stepper">
+          <div class="step">步驟一：<br />查詢交通罰鍰</div>
+          <div class="step-arrow">➡</div>
+          <div class="step active">步驟二：<br />勾選欲繳納的罰鍰</div>
+          <div class="step-arrow">➡</div>
+          <div class="step">步驟三：<br />繳納費用</div>
+        </div>
+        <div class="tabs">
+          <div class="tab active" data-target="section-online">
+            可線上繳納
+          </div>
+          <div class="tab" data-target="section-offline">不可線上繳納</div>
+        </div>
+
+        <div class="result-section" id="section-online">
+          <div class="result-title">下列罰單可做線上繳納：</div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>違規日</th>
+                <th>事由</th>
+                <th>罰鍰</th>
+                <th>應到案日</th>
+              </tr>
+            </thead>
+            <tbody id="online-penalty-tbody">
+              <tr>
+                <td id="violation-date"></td>
+                <td>違規停車</td>
+                <td>900</td>
+                <td id="due-date"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="result-section" id="section-offline" style="display: none">
+          <div class="result-title">
+            下列罰單因需到案或已辦理分期故不可線上繳納：
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>違規日</th>
+                <th>事由</th>
+                <th>罰鍰</th>
+                <th>應到案日</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="4">查無不可線上繳納罰單資料</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="action-buttons">
+          <button class="btn-submit" onclick="window.location.href = 'payment.html'">
+            線上繳費
+          </button>
+          <a class="link-back" href="#">«回上一步</a>
+        </div>
+        <div class="instructions">
+          <h3>交通罰鍰查詢及繳納注意事項</h3>
+          <p>
+            (一)交通罰鍰繳納方式請參閱公路局「罰鍰繳納方式」頁面 (<a href="#">https://www.thb.gov.tw/</a>)
+          </p>
+          <p>
+            (二)臨櫃繳納應備文件：<br />
+            1.違反道路交通管理事件通知單(紅單，若紅單遺失可至違章窗口查詢案件)。<br />
+            2.應繳罰鍰金額。<br />
+            3.「未帶駕照」之違規案件，應持駕照到案接受補驗。
+          </p>
+          <p>
+            (三)辦理方式：<br />
+            1.親自辦理：檢具應備文件至應到案之監理所站違章窗口辦理。<br />
+            2.郵繳即時銷案：凡於違反道路交通管理事件通知單左上角「得採郵繳或向委託之金融機構繳納罰鍰」打「v」記號之案件，可至各地郵局以即時銷案方式繳納。<br />
+            3.電話語音：凡可採郵繳者，均得以電話語音繳納。服務電話：<br />
+            (1) 412-1366用戶碼168#(大臺北地區不加2，其他縣市不加區域號碼)。<br />
+            (2) 41-1366用戶碼168#(電話號碼為6碼之地區)。<br />
+            註：銀行公會規定，非約定活期性帳戶繳費，每一轉出帳戶每日不得超過新臺幣10萬元，每月不得超過新臺幣20萬元，與個人帳戶非約定轉帳限額無關。
+          </p>
+        </div>
+      </section>
+      <!-- END: ContentArea -->
+
+      <!-- BEGIN: Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-search">
+          <input class="search-input" placeholder="Search..." type="text" />
+        </div>
+        <div class="quick-links">
+          <a class="quick-link-btn" href="#">
+            <img src="image/car.png" alt="" class="quick-link-icon" />
+            監理服務站列表
+          </a>
+          <a class="quick-link-btn" href="#">
+            <img src="image/car.png" alt="" class="quick-link-icon" />
+            服務窗口等候人數
+          </a>
+        </div>
+        <div class="hot-pages">
+          <h3>本站熱門網頁</h3>
+          <ul>
+            <li><a href="#">選號及轉帳作業</a></li>
+            <li><a href="#">交通違規查詢結果</a></li>
+            <li><a href="#">公路養管費查詢及繳費</a></li>
+            <li><a href="#">駕駛人及車輛資料查詢</a></li>
+            <li><a href="#">號牌標售</a></li>
+            <li><a href="#">意見信箱暨申訴平台</a></li>
+            <li><a href="#">網站使用說明</a></li>
+          </ul>
+        </div>
+      </aside>
+      <!-- END: Sidebar -->
+    </div>
+  </main>
+
+  <!-- BEGIN: Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="#">隱私權政策</a> | <a href="#">網站安全政策</a>
+      </div>
+      <div>
+        地址：108234臺北市萬華區東園街65號 | 系統操作服務專線：0800-080-412
+      </div>
+      <div class="footer-contact-area">
+        <div>監理服務專線：</div>
+        <div class="hotline-box">
+          <text>0800-231-035</text>
+        </div>
+      </div>
+      <div>
+        如有監理業務疑問請向<a href="#">全國各監理機關</a>洽詢<br />
+        交通部公路局 版權所有 最佳瀏覽畫面1024*768
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
