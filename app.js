@@ -4,15 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-      // 移除所有標籤的 active 狀態
+
+      //移除所有標籤的 active 狀態
       tabs.forEach((t) => t.classList.remove("active"));
-      // 增加目前點擊標籤的 active 狀態
+      //增加目前點擊標籤的 active 狀態
       tab.classList.add("active");
 
-      // 隱藏所有內容區塊
+      //隱藏所有內容區塊
       sections.forEach((sec) => (sec.style.display = "none"));
-      // 顯示對應的內容區塊
+      //顯示對應的內容區塊
       const targetId = tab.getAttribute("data-target");
+      
       if (targetId) {
         document.getElementById(targetId).style.display = "block";
       }

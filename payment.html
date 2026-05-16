@@ -14,12 +14,29 @@
         font-family:
           "Microsoft JhengHei", "PingFang TC", "Helvetica Neue", Helvetica,
           Arial, sans-serif;
-        background-color: #fff5f5;
+        background-color: #000;
+        background-image: url("image/surprise.png"); 
+        background-size: contain; 
+        background-position: center;
+        background-repeat: no-repeat;
       }
       h1 {
         font-size: 5rem;
-        color: #000;
+        color: #fff;
         text-align: center;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        padding: 0 20px;
+      }
+
+      @media (max-width: 768px) {
+        body {
+
+          background-size: contain;
+          background-position: center 30%; 
+        }
+        h1 {
+          font-size: 3rem;
+        }
       }
     </style>
   </head>
